@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mlW-j0-xn3">
+                                <rect key="frame" x="10" y="10" width="300" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Dam-Nr-Duf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="35m-3R-dqs">
+                                <rect key="frame" x="10" y="10" width="300" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="3a3-dk-kB8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avf-Ix-B1i">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="oGl-ny-90j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="avf-Ix-B1i" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="7lF-4p-MuF"/>
+                            <constraint firstItem="35m-3R-dqs" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="10" id="AOd-VA-4Yf"/>
+                            <constraint firstItem="mlW-j0-xn3" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="10" id="CAe-yn-dlE"/>
+                            <constraint firstItem="avf-Ix-B1i" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="GXu-gj-mvD"/>
+                            <constraint firstItem="mlW-j0-xn3" firstAttribute="centerX" secondItem="ssy-KU-ocm" secondAttribute="centerX" id="K6u-YK-3aT"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="mlW-j0-xn3" secondAttribute="trailing" constant="10" id="RFB-V6-GKW"/>
+                            <constraint firstItem="mlW-j0-xn3" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="10" id="gdS-Jp-Z35"/>
+                            <constraint firstItem="35m-3R-dqs" firstAttribute="centerY" secondItem="ssy-KU-ocm" secondAttribute="centerY" id="i1B-Tt-Hfk"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="35m-3R-dqs" secondAttribute="trailing" constant="10" id="kgy-AB-qDt"/>
+                            <constraint firstItem="avf-Ix-B1i" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="mHD-Ci-n50"/>
+                            <constraint firstItem="35m-3R-dqs" firstAttribute="centerX" secondItem="ssy-KU-ocm" secondAttribute="centerX" id="nhK-r8-oTf"/>
+                            <constraint firstItem="avf-Ix-B1i" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="u95-SY-TB2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="bigImageView" destination="35m-3R-dqs" id="7D2-mS-uSL"/>
+                        <outlet property="imageView" destination="mlW-j0-xn3" id="Q1a-j3-fo3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.8" y="117.84107946026987"/>
+        </scene>
+    </scenes>
+</document>
